@@ -1,0 +1,18 @@
+.class-sort{
+    float: left;
+    font-size: 35px;
+    color: #ccc;
+}
+
+.breadcrumb span {
+    float: left !important;
+}
+.btn-group-vertical>.btn, .btn-group>.btn{
+    float: right !important;
+}
+.accordion-struct.panel-group .panel .panel-heading.activestate{
+    background: #177ec1;
+}
+.table-custom > thead > tr > th, .jsgrid-table > thead > tr > th{
+    padding: 5px;
+}

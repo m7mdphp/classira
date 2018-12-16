@@ -1,0 +1,48 @@
+.class-sort{
+    float: left;
+    font-size: 35px;
+    color: #ccc;
+}
+
+.breadcrumb span {
+    float: left !important;
+}
+.btn-group-vertical>.btn, .btn-group>.btn{
+    float: right !important;
+}
+.accordion-struct.panel-group .panel .panel-heading.activestate{
+    background: #177ec1;
+}
+.table-custom > thead > tr > th, .jsgrid-table > thead > tr > th{
+    padding: 5px;
+}
+.hide_me{display: none;}
+.ul-collapse{ list-style-type: disc !important;}
+.ul-collapse li{
+    list-style-type: disc;
+    margin-right: 40px;
+    padding-right: 0;
+    position: relative;
+}
+.fixed-sidebar-left .side-nav > li > ul > li a {
+    padding: 7px 0px 6px 0px
+}
+   
+.ul-collapse li:after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: -15.5%;
+    border-left: 1px solid #ccc;
+    border-radius: 0px 0 0 0;
+    width: 20px;
+    height: 100%;
+    }
+
+
+element {
+
+}
+.navbar.navbar-inverse.navbar-fixed-top .nav > li .dropdown-menu.user-auth-dropdown {
+
+    min-width: 260px}
