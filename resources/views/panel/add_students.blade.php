@@ -58,11 +58,9 @@
                         <div class="form-group">
 							<div class="col-md-6">
 								<label class="control-label mb-10">سنة القبول<span class="help text-danger"> *</span></label>
-								<select class="form-control" required name="enter_year">
-										@foreach ($enteryears as $enteryear)
-    									<option value="{{$enteryear->id}}">{{$enteryear->name}}</option>
-									@endforeach
-									</select>
+							
+									<input type="text" class="form-control" required name="enter_year" value="{{ old('enter_year') }}">
+									
 							</div>
 					</div>
 
@@ -229,7 +227,7 @@
                         <div class="form-group">
 							<div class="col-md-6">
 								<label class="control-label mb-10"> تاريخ الالتحاق</label>
-								<input type="date" class="form-control" placeholder="" name="enter_date" value="{{ old('enter_date') }}">
+								<input type="date" class="form-control" placeholder="" name="enter_date" value="{{ old('enter_date') }}" id="enter_date">
 							</div>
 					</div>
                         
@@ -292,3 +290,10 @@
 				</div>
 				<!-- Row -->
 				@endsection
+@section('js')
+<script type="text/javascript">
+         $(function() {
+            $( "#enter_year" ).datepicker({dateFormat: 'yy'});
+         });
+      </script>
+@endsection

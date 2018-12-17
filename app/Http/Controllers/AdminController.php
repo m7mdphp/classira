@@ -32,7 +32,10 @@ class AdminController extends Controller
 
     public function store(Request $request)
     {
-       
+       $request->validate([
+    'id_num' => 'required|max:255',
+    'name' => 'required',
+]);
 
          Admins::create([
             'id_num' => $request['id_num'],

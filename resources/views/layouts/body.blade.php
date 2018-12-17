@@ -29,6 +29,9 @@
 	<link href="{{ asset('dist/css/style.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ asset('dist/css/custom.css') }}" rel="stylesheet" type="text/css">
 	@yield('css')
+	
+
+
 </head>
 
 <body>
